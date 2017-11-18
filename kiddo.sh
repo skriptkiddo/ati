@@ -4,7 +4,7 @@ while [ $mlotek == 'y' ] || [ $mlotek == 'Y' ];
 do
 clear
 echo -e "\e[31m========================================================================================";
-echo -e "\e[33m {V} Version 1.0.0";
+echo -e "\e[33m {V} Version 1.1.0";
 echo -e "\e[92m";
 echo "			.__   .__    .___  .___      ";
 echo "			|  | _|__| __| _/__| _/____  ";
@@ -40,27 +40,28 @@ echo -e "\e[92m 16. droopescan \e[33m[ Drupal.    SilverStripe.    Wordpress.Par
 echo -e "\e[92m 17. PenBox \e[33m[A Penetration Testing Framework ,] ";
 echo -e "\e[92m 18. Striker \e[33m[Striker is an offensive information and vulnerability scanner. https://teamultimate.in] ";
 echo -e "\e[92m 19. Infoga \e[33m[Email Information Gathering]";
+echo -e "\e[92m 20. HatCloud \e[33m[A Tool To Bypass CloudFlare For Identify Real IP Address]";
 echo "";
 echo -e "\e[31m==============================|| \e[37m D-DOS, DOS Attack \e[31m ||=================================";
 echo "";
-echo -e "\e[92m 20. Hammer \e[33m[D-DOS Attack] ";
-echo -e "\e[92m 21. GoldenEye \e[33m[HTTP DoS Test Tool.] ";
+echo -e "\e[92m 21. Hammer \e[33m[D-DOS Attack] ";
+echo -e "\e[92m 22. GoldenEye \e[33m[HTTP DoS Test Tool.] ";
 echo "";
 echo -e "\e[31m==============================||   \e[37m WI-FI Attacks \e[31m   ||=================================";
 echo "";
-echo -e "\e[92m 22. Netattack2 \e[33m[scan and attack networks] ";
-echo -e "\e[92m 23. Wifiphisher \e[33m[security tool that mounts automated victim-customized phishing attacks against WiFi clients] ";
-echo -e "\e[92m 24. WiFi-Pumpkin \e[33m[Framework for Rogue Wi-Fi Access Point Attack] ";
+echo -e "\e[92m 23. Netattack2 \e[33m[scan and attack networks] ";
+echo -e "\e[92m 24. Wifiphisher \e[33m[security tool that mounts automated victim-customized phishing attacks against WiFi clients] ";
+echo -e "\e[92m 25. WiFi-Pumpkin \e[33m[Framework for Rogue Wi-Fi Access Point Attack] ";
 echo "";
 echo -e "\e[31m==============================|| \e[37m         IP        \e[31m ||=================================";
 echo "";
-echo -e "\e[92m 25. 4nonimizer \e[33m [script for anonymizing the public IP] ";
-echo -e "\e[92m 26. TorGhost \e[33m [Proxy] ";
+echo -e "\e[92m 26. 4nonimizer \e[33m [script for anonymizing the public IP] ";
+echo -e "\e[92m 27. TorGhost \e[33m [Proxy] ";
 echo "";
 echo -e "\e[31m==============================|| \e[37m       Others      \e[31m ||=================================";
 echo "";
-echo -e "\e[92m 27. Gdebi \e[33m [linux installer app] ";
-echo -e "\e[92m 28. Sublime-text \e[33m[text editor] ";
+echo -e "\e[92m 28. Gdebi \e[33m [linux installer app] ";
+echo -e "\e[92m 29. Sublime-text \e[33m[text editor] ";
 echo "";
 echo -e "\e[31m==============================||\e[37m Install by category \e[31m||=================================";
 echo -e "";
@@ -78,7 +79,7 @@ echo -e "\e[92m 666. All Tools \e[33m[\e[31mAll above tools \e[33m,if there fail
 echo "";
 echo -e "\e[31m========================================================================================";
 echo -e "\e[0;35m ";
-read -p "  You can choose between : [1-28] 'end' For Exit :" molly;
+read -p "  You can choose between : [1-29] 'end' For Exit :" molly;
 echo -e "\e[31m";
 echo -e "\e[31m========================================================================================";
 now=$(date +"%T %D")
@@ -160,39 +161,43 @@ git clone https://github.com/m4ll0k/Infoga.git
 echo -e "\e[0;35m $now";
 ;;
 20)
-git clone https://github.com/cyweb/hammer.git
+git clone https://github.com/HatBashBR/HatCloud.git
 echo -e "\e[0;35m $now";
 ;;
 21)
-git clone https://github.com/jseidl/GoldenEye.git
+git clone https://github.com/cyweb/hammer.git
 echo -e "\e[0;35m $now";
 ;;
 22)
-git clone https://github.com/chrizator/netattack2.git
+git clone https://github.com/jseidl/GoldenEye.git
 echo -e "\e[0;35m $now";
 ;;
 23)
-git clone https://github.com/wifiphisher/wifiphisher.git
+git clone https://github.com/chrizator/netattack2.git
 echo -e "\e[0;35m $now";
 ;;
 24)
-git clone https://github.com/P0cL4bs/WiFi-Pumpkin.git
+git clone https://github.com/wifiphisher/wifiphisher.git
 echo -e "\e[0;35m $now";
 ;;
 25)
-git clone https://github.com/Hackplayers/4nonimizer.git
+git clone https://github.com/P0cL4bs/WiFi-Pumpkin.git
 echo -e "\e[0;35m $now";
 ;;
 26)
-git clone https://github.com/susmithHCK/torghost.git
+git clone https://github.com/Hackplayers/4nonimizer.git
 echo -e "\e[0;35m $now";
 ;;
 27)
+git clone https://github.com/susmithHCK/torghost.git
+echo -e "\e[0;35m $now";
+;;
+28)
 apt-get update
 apt-get install gdebi -y
 echo -e "\e[0;35m $now";
 ;;
-28)
+29)
 apt-get install gdebi sublime-text_build-3047_amd64.deb
 echo -e "\e[0;35m $now";
 ;;
@@ -216,6 +221,7 @@ git clone https://github.com/droope/droopescan.git
 git clone https://github.com/x3omdax/PenBox.git
 git clone https://github.com/UltimateHackers/Striker.git
 git clone https://github.com/m4ll0k/Infoga.git
+git clone https://github.com/HatBashBR/HatCloud.git
 echo -e "\e[0;35m $now";
 ;;
 581)
@@ -260,6 +266,7 @@ git clone https://github.com/droope/droopescan.git
 git clone https://github.com/x3omdax/PenBox.git
 git clone https://github.com/UltimateHackers/Striker.git
 git clone https://github.com/m4ll0k/Infoga.git
+git clone https://github.com/HatBashBR/HatCloud.git
 git clone https://github.com/cyweb/hammer.git
 git clone https://github.com/jseidl/GoldenEye.git
 git clone https://github.com/chrizator/netattack2.git
